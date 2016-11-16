@@ -41,8 +41,30 @@ public class Fifo {
 
 	}
 
-	public void remove(){
-		
+	public String remove(){
+
+		this.numberItens--;
+
+		String firstQueue = collection[0];
+
+		for(int i=0; i < collection.length; i++){
+
+			if((i+1) == collection.length)
+			{
+				collection[i] = "";
+				break;
+			}
+
+			if(collection[i+1] == null || collection[i+1] == ""){
+				collection[i] = "";
+				break;
+			}
+			else{
+				collection[i] = collection[i+1];
+			}
+
+		}
+		return firstQueue;
 	}
 
 	public String[] GetItens(){

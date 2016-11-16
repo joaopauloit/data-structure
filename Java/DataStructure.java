@@ -47,9 +47,8 @@ public class DataStructure{
 
 							fifo.insert(valor);
 
+							System.out.println("Item inserido\n\n");
 						}
-
-						System.out.println("Item inserido\n\n");
 
 					break;
 					case "2" :
@@ -58,7 +57,7 @@ public class DataStructure{
 						}
 						else {
 
-							valor = remover(&umaFila);
+							String valor = fifo.remove();
 							System.out.println("\n"+ valor +", removido com sucesso\n\n") ;
 
 						}
