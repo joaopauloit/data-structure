@@ -35,13 +35,11 @@ public class DataStructure{
 					case "1" :
 
 						if (fifo.full()){
-
-								System.out.println("Fila cheia\n");
-
+								System.out.println("\nFila cheia\n\n");
 						}
 						else {
 
-							System.out.println("\nValor do elemento a ser inserido? ");
+							System.out.println("\nValor do elemento a ser inserido? \n");
 
 							System.out.print("Digite: ");
 
@@ -51,22 +49,19 @@ public class DataStructure{
 
 						}
 
-						System.out.println("Item inserido\n");
+						System.out.println("Item inserido\n\n");
 
 					break;
 					case "2" :
-						if (estaVazia(&umaFila)){
-
-							printf("\nFila vazia!!!\n\n");
-
+						if (fifo.free()){
+							System.out.println("\nFila vazia\n\n");
 						}
 						else {
 
 							valor = remover(&umaFila);
-							printf("\n%1f removido com sucesso\n\n", valor) ;
+							System.out.println("\n"+ valor +", removido com sucesso\n\n") ;
 
 						}
-						System.out.println("Item removido\n");
 					break;
 					case "3" :
 
